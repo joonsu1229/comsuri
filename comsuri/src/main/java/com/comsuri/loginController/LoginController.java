@@ -16,7 +16,7 @@ public class LoginController {
 	
 	@RequestMapping(value = "/selectUser", method = RequestMethod.GET)
 	public String selectUser(HttpServletRequest request, HttpServletResponse response) {
-		System.out.println("Àß³ª¿À´Ï");
+		System.out.println("ì•ˆë…•");
 		
 		return "login/loginPage";
 	}
