@@ -1,0 +1,22 @@
+@charset "UTF-8";
+@import url(reset.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@font-face { font-family: 'KOMACON'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/KOMACON.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+body {font-size:14px;}
+.maxwidth {max-width:440px; margin:0 auto;}
+.comsuri_logoName {font-family:'KOMACON'; font-size:32px; letter-spacing:8px;}
+/* comsuri_index */
+.index_wrap {background:#C5E6EF; width:100%; height:100%; text-align:center;}
+.index_wrap .index {position:relative; top:50%; transform:translateY(-50%); }
+.index_wrap header {text-align:center;}
+.index_wrap header img {display:block; margin:0 auto; width:250px;}
+.index_wrap main label {display:none;}
+.index_wrap main input {display:block; width:250px; box-sizing:border-box; margin:0 auto 5px; padding:10px; letter-spacing:0;}
+.index_wrap main input[type="submit"] {background:#94ccdc; color:#fff; cursor:pointer;}
+.index_wrap main .find_info {width:250px; margin:0 auto;}
+.index_wrap main .find_info a {font-size:12px;}
+.index_wrap main .sns_account {margin-top:30px; margin-bottom:100px;}
+.index_wrap main .sns_account a {display:block; font-size:12px; font-weight:bold; padding:5px 0; width:250px; border-radius:20px; margin:0 auto 5px;}
+.index_wrap main .sns_account .kakao a {background:#FEE101;}
+.index_wrap main .sns_account .naver a {background:#03CF5D;}

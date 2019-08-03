@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* global rest */
+html, body {width: 100%; height:100%; }
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,strong,sub,sup,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,summary,small,b,i,article,aside,canvas,details,figcaption,figure,footer,header,menu,nav,section,time,mark,audio,video {margin: 0;padding: 0;}
+h1, h2, h3, h4, h5, h6{font-weight: normal;}
+body {overflow-y:scroll; }
+body, table, input, select, textarea, a, a:link, a:visited, a:hover,h1, h2, h3, h4, h5, h6, a, p
+{ letter-spacing:-1px; font-size: 14px; line-height:1.5; color: #464646; font-family:'나눔고딕', 'Nanum Gothic', '맑은 고딕', 'Malgun Gothic', ,arial, Verdana, Dotum, AppleGothic, sans-serif;}
+article,aside,details,figcaption,figure,footer,header,menu,nav,section,video{display:block;}
+img, fieldset,button { border:0 none; }
+li {list-style: none; }
+hr, caption, legend {display: none; }
+a {text-decoration: none;cursor:pointer; transition: all 0.2s ease; }
+a:hover {transition: all 0.2s ease; }
+button {overflow: hidden; cursor: pointer; background:none;}
+button span { text-indent:-9999px; overflow:hidden; font-size:0;}
+button, input, select, textarea, a { vertical-align: middle; }
+select {  line-height: 18px;  height: 36px; padding:5px; border:1px solid #e5e5e5; }
+input{border: 0;}
+input:focus { outline: none; }
+input,img { vertical-align: middle;}
+table { border-collapse: collapse; border-spacing: 0; table-layout: fixed; word-wrap: break-word;  }
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+.clearfix:after{ content: ""; display: block; clear: both }
+#skipNavi,.blind,.hidden{position:absolute;left:0;width:0;height:0;font-size:0;line-height:0;text-indent:-9999px;
+overflow:hidden;visibility:hidden;}

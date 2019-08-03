@@ -28,7 +28,7 @@
 		<div class="find_info">
 			<a href="#" target="_blank">아이디 찾기</a>
 			<a href="#" target="_blank">비밀번호 찾기</a>
-			<a href="#" target="_blank">회원가입</a>
+			<a href="#" target="_blank">회원가입</a> 
 		</div>
 		<div class="sns_account">
 			<div class="kakao">
