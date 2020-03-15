@@ -18,10 +18,11 @@ public class DatabaseConfiguration {
     @Bean
     public DriverManagerDataSource dataSource() {
         DriverManagerDataSource source = new DriverManagerDataSource();
-        source.setDriverClassName("com.mysql.cj.jdbc.Driver");  
-        source.setUrl("jdbc:mysql://54.180.79.165:3306/comsuri?serverTimezone=UTC&useSSL=false");
+        //source.setDriverClassName("com.mysql.cj.jdbc.Driver");
+        source.setDriverClassName("com.mysql.jdbc.Driver");
+        source.setUrl("jdbc:mysql://25.80.223.227:3306/comsuri?serverTimezone=UTC&useSSL=false");
         source.setUsername("comsuri");
-        source.setPassword("comsuriAdmin");
+        source.setPassword("comsuri");
         
         return source;
     }

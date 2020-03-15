@@ -3,7 +3,8 @@
 <html>
 <head>
 <script type="text/javascript" src="./resources/lib/jquery/jquery-1.10.2.js"></script>
-<script type="text/javascript" src="./resources/comsuriMain/main.js"></script>
+<script type="text/javascript" src="./resources/js/comsuriMain/main.js"></script>
+<script src="//developers.kakao.com/sdk/js/kakao.js"></script> 
 <link rel="stylesheet" href="./resources/css/main.css">
 <title>COMSURI</title>
 </head>
@@ -31,18 +32,19 @@
 			<a href="#" target="_blank">회원가입</a> 
 		</div>
 		<div class="sns_account">
-			<div class="kakao">
-				<a href="#" target="_blank">카카오계정으로 로그인</a>
+			<div class="">
+				<a id="index_kakaoLogin" target="_blank"><img src="//mud-kage.kakao.com/14/dn/btqbjxsO6vP/KPiGpdnsubSq3a0PHEGUK1/o.jpg" width="250"/></a>
 			</div>
 			<div class="naver">
-				<a href="#" target="_blank">네이버계정으로 로그인</a>
-			</div>
-		</div>
+				<a href="#" id="index_naverLogin"target="_blank">네이버계정으로 로그인</a>				
+			</div>			
+		</div>		
 	</main>
 	<footer class="maxwidth">
 		<p>Copyright (c) 2019 comsuri. All rights reserved.</p>
 	</footer>
 	</div>
+	<div id="test"></div>
 </div>
 </body>
 </html>

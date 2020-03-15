@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 사용할 인터페이스의 경로 -->
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<!-- 사용할 인터페이스의 경로 -->
+<mapper namespace="com.comsuri.loginDao.LoginDao">
+	<resultMap id="userInfo" type="com.comsuri.loginVO.LoginUserVO">
+		<result column="user_id" property="user_id" jdbcType="VARCHAR"/>
+		<result column="user_email" property="user_email" jdbcType="VARCHAR"/>
+		<result column="user_password" property="user_password" jdbcType="VARCHAR"/>
+		<result column="user_profileImagePath" property="user_profileImagePath" jdbcType="VARCHAR"/>
+		<result column="user_sex" property="user_sex" jdbcType="INTEGER"/>
+		<result column="user_birth" property="user_birth" jdbcType="VARCHAR"/>
+		<result column="user_job" property="user_job" jdbcType="VARCHAR"/>
+		<result column="user_phoneNumber" property="user_phoneNumber" jdbcType="VARCHAR"/>
+		<result column="user_authStatus" property="user_authStatus" jdbcType="VARCHAR"/>		
+		<result column="user_status" property="user_status" jdbcType="VARCHAR"/>
+		<result column="user_log" property="user_log" jdbcType="VARCHAR"/>
+		<result column="user_regDt" property="user_regDt" jdbcType="VARCHAR"/>
+		<result column="user_isAdmin" property="user_isAdmin" jdbcType="VARCHAR"/>
+	</resultMap>
+	
+	<insert id="insertLoginInfo" parameterType="com.comsuri.loginVO.LoginUserVO" >
+		insert into userInfo values(
+			#{user_id},
+			#{user_email},
+			#{user_name},
+			#{user_password},
+			#{user_profileImagePath},
+			#{user_sex},
+			#{user_birth},
+			#{user_job},
+			#{user_phoneNumber},
+			#{user_authStatus},
+			#{user_status},
+			NOW(),			
+			#{user_isAdmin},
+			NOW()
+		)
+	</insert>
+	
+	<select id="selectLoginInfo" parameterType="com.comsuri.loginVO.LoginUserVO" resultMap="userInfo">
+		SELECT *
+		  FROM userInfo
+		 WHERE user_id = #{user_id}
+	</select>
+</mapper>
+
