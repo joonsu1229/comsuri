@@ -12,7 +12,8 @@ var KakaoLogin = (function(){
 	
 	fn = {			
 			kakaoLoginPage : function(){
-		   	debugger
+		   		window.opener.location.href="/comsuri/comsuriMain";
+		   		window.close();
 		 },
 	};
 })();

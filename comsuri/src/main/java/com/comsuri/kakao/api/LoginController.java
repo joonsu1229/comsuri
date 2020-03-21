@@ -25,11 +25,6 @@ public class LoginController {
 	@Autowired
 	private LoginService loginService;
 	
-	@RequestMapping(value = "/login/kakaoLogin", method = RequestMethod.GET)
-	public String selectUser(HttpServletRequest request, HttpServletResponse response) {
-		return "/login/kakaoLogin";
-	}
-	
     @RequestMapping(value = "/oauth", produces = "application/json", method = { RequestMethod.GET, RequestMethod.POST })
     public String kakaoLogin(@RequestParam("code") String code, HttpServletRequest request, HttpServletResponse response, HttpSession session) {
         JsonNode jsonToken = kakao_restApi.getAccessToken(code);
@@ -48,6 +43,6 @@ public class LoginController {
 		 */
         
         System.out.println("JSON 반환:" + jsonToken.get("access_token"));
-        return "/comsuriMain/comsuriMain";
+        return "/login/kakaoLogin";
     }
 }
