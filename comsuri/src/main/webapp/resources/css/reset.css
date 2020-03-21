@@ -7,7 +7,7 @@ body {overflow-y:scroll; }
 body, table, input, select, textarea, a, a:link, a:visited, a:hover,h1, h2, h3, h4, h5, h6, a, p
 { letter-spacing:-1px; font-size: 14px; line-height:1.5; color: #464646; font-family:'나눔고딕', 'Nanum Gothic', '맑은 고딕', 'Malgun Gothic', ,arial, Verdana, Dotum, AppleGothic, sans-serif;}
 article,aside,details,figcaption,figure,footer,header,menu,nav,section,video{display:block;}
-img, fieldset,button { border:0 none; }
+img, fieldset,button { border:0 none; padding:0; margin:0;}
 li {list-style: none; }
 hr, caption, legend {display: none; }
 a {text-decoration: none;cursor:pointer; transition: all 0.2s ease; }

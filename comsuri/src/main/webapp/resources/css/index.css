@@ -6,6 +6,7 @@
 body {font-size:14px;}
 .maxwidth {max-width:440px; margin:0 auto;}
 .comsuri_logoName {font-family:'KOMACON'; font-size:32px; letter-spacing:8px;}
+
 /* comsuri_index */
 .index_wrap {background:#C5E6EF; width:100%; height:100%; text-align:center;}
 .index_wrap .index {position:relative; top:50%; transform:translateY(-50%); }
@@ -18,5 +19,5 @@ body {font-size:14px;}
 .index_wrap main .find_info a {font-size:12px;}
 .index_wrap main .sns_account {margin-top:30px; margin-bottom:100px;}
 .index_wrap main .sns_account a {display:block; font-size:12px; font-weight:bold; padding:5px 0; width:250px; border-radius:20px; margin:0 auto 5px;}
-.index_wrap main .sns_account .kakao a {background:#FEE101;}
+/* .index_wrap main .sns_account .kakao a {background:#FEE101;} */
 .index_wrap main .sns_account .naver a {background:#03CF5D;}

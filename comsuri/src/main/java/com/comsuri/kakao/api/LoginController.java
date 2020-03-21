@@ -42,11 +42,12 @@ public class LoginController {
         session.setAttribute("loginUserInfo", vo);
                
         //DB에서 조회한 값이 null일경우 카카오톡에 넣은 유저 정보를 insert해줌
-        if(loginService.selectLoginInfo(vo) == null) { 
-        	loginService.insertLoginInfo(vo);
-        }
+		/*
+		 * if(loginService.selectLoginInfo(vo) == null) {
+		 * loginService.insertLoginInfo(vo); }
+		 */
         
         System.out.println("JSON 반환:" + jsonToken.get("access_token"));
-        return "/login/kakaoLogin";
+        return "/comsuriMain/comsuriMain";
     }
 }
